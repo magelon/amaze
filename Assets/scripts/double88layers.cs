@@ -12,6 +12,8 @@ public class double88layers : MonoBehaviour
     public bool moving=false;
     public string direction;
 
+    public bool win = false;
+
     Vector2 startPos, endPos;
 
     public GameObject buttomCube;
@@ -67,7 +69,6 @@ public class double88layers : MonoBehaviour
 
     public void playerMove(string direction)
     {
-
         if (direction == "right")
         {
             while (player[0]<7 && topLayer[player[0]+1, player[1]]!= 1)
@@ -82,32 +83,76 @@ public class double88layers : MonoBehaviour
 
                     //paint player pass spot
                     buttomLayer[player[0], player[1]] = 1;
-
-
-                /*
-                if (topLayer[player[0] + 1, player[1]] == 1)
-                {
-                    Debug.Log("stop");
-                    //stop move
-                    moving = false;
-                    //play the stop animation
-                    return;
-                }**/
             }
-            //check the cube on the right of the player //player[0] + 1 >= 8 ||
-            //if ( player[0] + 1 >= 8)
-            //{
-                Debug.Log("stop");
+           
                 //stop move
                 moving = false;
                 //play the stop animation
-                //return;
-            //}
-            //else
-            //{
-               
-            //}
         }
+
+        if (direction == "left")
+        {
+            while (player[0] > 0 && topLayer[player[0] - 1, player[1]] != 1)
+            {
+                Vector3 end = new Vector3(transform.position.x - 1, transform.position.y, -1);
+                //move one position right 
+                moving = true;
+                playerIllusion.transform.position = end;
+                //playerIllusion.transform.position = Vector3.MoveTowards(playerIllusion.transform.position, end,  Time.deltaTime);
+
+                player[0]--;
+
+                //paint player pass spot
+                buttomLayer[player[0], player[1]] = 1;
+            }
+
+            //stop move
+            moving = false;
+            //play the stop animation
+        }
+
+        if (direction == "up")
+        {
+            while (player[1] < 7 && topLayer[player[0], player[1]+1] != 1)
+            {
+                Vector3 end = new Vector3(transform.position.x , transform.position.y+1, -1);
+                //move one position right 
+                moving = true;
+                playerIllusion.transform.position = end;
+                //playerIllusion.transform.position = Vector3.MoveTowards(playerIllusion.transform.position, end,  Time.deltaTime);
+
+                player[1]++;
+
+                //paint player pass spot
+                buttomLayer[player[0], player[1]] = 1;
+            }
+
+            //stop move
+            moving = false;
+            //play the stop animation
+        }
+
+        if (direction == "down")
+        {
+            while (player[1] > 0 && topLayer[player[0], player[1] - 1] != 1)
+            {
+                Vector3 end = new Vector3(transform.position.x, transform.position.y - 1, -1);
+                //move one position right 
+                moving = true;
+                playerIllusion.transform.position = end;
+                //playerIllusion.transform.position = Vector3.MoveTowards(playerIllusion.transform.position, end,  Time.deltaTime);
+
+                player[1]--;
+
+                //paint player pass spot
+                buttomLayer[player[0], player[1]] = 1;
+            }
+
+            //stop move
+            moving = false;
+            //play the stop animation
+        }
+
     }
 
     void paintButtomLayer()
@@ -169,6 +214,16 @@ public class double88layers : MonoBehaviour
     {
         paintButtomLayer();
 
+        if (checkWin())
+        {
+            if (!win)
+            {
+                win = true;
+                Debug.Log("win");
+            }
+
+        }
+
         if (moving)
         {
             playerMove(direction);
@@ -200,12 +255,16 @@ public class double88layers : MonoBehaviour
                     {
                         //move up
                         Debug.Log("up");
+                        moving = true;
+                        direction = "up";
                         //update startpos
                         startPos = Input.mousePosition;
                     }
                     else
                     {
-                        Debug.Log("dowm");
+                        Debug.Log("down");
+                        moving = true;
+                        direction = "down";
                         startPos = Input.mousePosition;
                     }
                 }
@@ -222,6 +281,8 @@ public class double88layers : MonoBehaviour
                     else
                     {
                         Debug.Log("left");
+                        moving = true;
+                        direction = "left";
                         startPos = Input.mousePosition;
                     }
                 }
