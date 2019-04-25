@@ -12,10 +12,11 @@ public class double88layers : MonoBehaviour
     public bool moving=false;
     public string direction;
 
-    public Animator an;
+    private Animator an;
 
     ParticleSystem stop;
     public bool win = false;
+    public ParticleSystem winParticle;
 
     Vector2 startPos, endPos;
 
@@ -215,6 +216,7 @@ public class double88layers : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
         buttomLayer = new int[8, 8];
         topLayer=new int[8,8];
 
@@ -246,6 +248,13 @@ public class double88layers : MonoBehaviour
             {
                 win = true;
                 Debug.Log("win");
+
+                if (!winParticle.isPlaying)
+                {
+                    winParticle.Play();
+                }
+                GameData.getInstance().main.gameWin();
+
             }
 
         }
