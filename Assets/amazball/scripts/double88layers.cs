@@ -240,6 +240,7 @@ public class double88layers : MonoBehaviour
 
     void Update()
     {
+        Time.timeScale = 1;
         paintButtomLayer();
 
         if (checkWin())
