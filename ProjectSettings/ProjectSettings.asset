@@ -586,10 +586,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: bfbddd04-6747-4819-bcf5-c7401adc4ef9
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: addforce
+  organizationId: guojin
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
