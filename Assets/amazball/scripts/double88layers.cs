@@ -95,6 +95,7 @@ public class double88layers : MonoBehaviour
             {
                 stop.Play();
                 an.SetTrigger("stop");
+                GameManager.getInstance().playSfx("bouncy");
             }
             //play the stop animation
         }
@@ -121,6 +122,7 @@ public class double88layers : MonoBehaviour
             {
                 stop.Play();
                 an.SetTrigger("stop");
+                GameManager.getInstance().playSfx("bouncy");
             }
             //play the stop animation
         }
@@ -147,6 +149,7 @@ public class double88layers : MonoBehaviour
             {
                 stop.Play();
                 an.SetTrigger("stop");
+                GameManager.getInstance().playSfx("bouncy");
             }
             //play the stop animation
         }
@@ -173,6 +176,7 @@ public class double88layers : MonoBehaviour
             {
                 stop.Play();
                 an.SetTrigger("stop");
+                GameManager.getInstance().playSfx("bouncy");
             }
             //play the stop animation
         }
