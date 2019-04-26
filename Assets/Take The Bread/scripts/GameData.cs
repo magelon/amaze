@@ -7,7 +7,6 @@ public class GameData  {
 
 		// Use this for initialization
 
-	
 		public int levelPassed = 0;
 		public int cLevel = 0;
 		public int bestScore = 0;
@@ -19,8 +18,6 @@ public class GameData  {
 		public static bool isInGame = false; //not used
 		public static bool isAds = true;//whether show advertisment
 	
-
-
 		public int tipRemain = 0;//not used
 		public int coin = 0;//your coin
 
