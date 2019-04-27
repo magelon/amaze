@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 118ecf986c525ec49b4984aa9643e96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 2800000, guid: 82c0aaeadd0a11f4795d8059a31b4124, type: 3}
+  map: {fileID: 2800000, guid: 3494e34094abd5644b4fe18947e25166, type: 3}
   playerIllusion: {fileID: 375189586}
   moving: 0
   direction: 
