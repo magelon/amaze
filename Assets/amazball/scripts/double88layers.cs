@@ -12,6 +12,11 @@ public class double88layers : MonoBehaviour
     public bool moving=false;
     public string direction;
 
+    private TrailRenderer tr;
+    private Renderer skin;
+    private Color rColor;
+    private GameObject hat;
+
     private Animator an;
 
     ParticleSystem stop;
@@ -192,7 +197,7 @@ public class double88layers : MonoBehaviour
                 if (buttomLayer[i, j] == 1)
                 {
                     string findName = "" + i + j;
-                    buttomCubeMap[findName].GetComponent<ChangeColor>().change();
+                    buttomCubeMap[findName].GetComponent<Renderer>().material.color = rColor;
                     topLayer[i, j] = 2;
                 }
                 
@@ -220,6 +225,21 @@ public class double88layers : MonoBehaviour
 
     void Start()
     {
+      rColor=  new Color(
+      Random.Range(0f, 1f),
+      Random.Range(0f, 1f),
+      Random.Range(0f, 1f)
+  );
+        skin = GetComponent<Renderer>();
+        skin.material.color = rColor;
+
+        tr = GetComponent<TrailRenderer>();
+        tr.startColor = rColor;
+        tr.endColor = Color.white;
+
+        hat = GameObject.Find("hatPos");
+        hat.transform.position = new Vector3(hat.transform.position.x, hat.transform.position.y, -1);
+
         Time.timeScale = 1;
         buttomLayer = new int[8, 8];
         topLayer=new int[8,8];
@@ -236,6 +256,9 @@ public class double88layers : MonoBehaviour
         player=new int[2] { 0,0};
 
         stop = GetComponent<ParticleSystem>();
+
+        stop.startColor = rColor;
+
         an = GetComponent<Animator>();
 
         drawButtomLayer();
