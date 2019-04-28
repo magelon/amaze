@@ -155,4 +155,64 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Take The Bread/GameLevel/cutLevels/145/level45.unity
     guid: eab68d96d67bd3e4c956f224722bf838
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level46.unity
+    guid: f19c256704e0c634f86851b01780b05e
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level47.unity
+    guid: 9b52b666ce11eca41b0f1ec0545faebb
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level48.unity
+    guid: 401f7a67920ef4d4b88a21673e88bdbb
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level49.unity
+    guid: 1984e5eafe87b3040836ed722f473ab6
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level50.unity
+    guid: 0d9773b1a572ff64080f353abd8ac5d3
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level51.unity
+    guid: 3130fed5f7bf5374e8279efa99a41a87
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level52.unity
+    guid: a536212f0a759824fa8f327db86d9899
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level53.unity
+    guid: 5593021e0e8dea54081bfcd8b4be705c
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level54.unity
+    guid: dae1c419321aae74387fbc6e8306b8ff
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level55.unity
+    guid: be16fabea30a0fa4f8cc59557e50b023
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level56.unity
+    guid: e392325cab3f1af4e9a90e066b7c7d6d
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level57.unity
+    guid: a949df151aedc0e41991a26741cfa547
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level58.unity
+    guid: 1f26824503d47484e9860b4ee8da00b6
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level59.unity
+    guid: 02b845f1be4df684889dfbab9f9ff883
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level60.unity
+    guid: 7022de7567f0b1b45a82ace943549bb2
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level61.unity
+    guid: 100ceabff6b7c88438b7769efa14b489
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level62.unity
+    guid: 62c93b8d1cc37ec45a0919dcd308b683
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level63.unity
+    guid: dd050ef068405124082f40f5663c0c6e
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level64.unity
+    guid: 69b893da7bb525c489eebe9af6d8303c
+  - enabled: 1
+    path: Assets/Take The Bread/GameLevel/cutLevels/46/level65.unity
+    guid: 1b960aaae860cea4aaf6a99017eeeac3
   m_configObjects: {}

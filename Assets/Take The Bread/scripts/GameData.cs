@@ -24,7 +24,7 @@ public class GameData  {
 		public MainScript main;//mainscipt instance
 		public GameObject maing;//not used
     //config how many level there are for level menu usage
-		public static int totalLevel = 45;//total levels
+		public static int totalLevel = 65;//total levels
     //config for items
         public static int totalItem = 10;
 
