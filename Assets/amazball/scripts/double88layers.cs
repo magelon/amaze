@@ -308,7 +308,7 @@ public class double88layers : MonoBehaviour
             endPos = Input.mousePosition;
 
             //detect its moving for a distance
-            if (Mathf.Abs(endPos.y - startPos.y) > 100 || Mathf.Abs(endPos.x - startPos.x) > 100)
+            if (Mathf.Abs(endPos.y - startPos.y) > 50 || Mathf.Abs(endPos.x - startPos.x) > 50)
             {
                 //check moving on y or x
                 if (Mathf.Abs(endPos.y - startPos.y) > Mathf.Abs(endPos.x - startPos.x))
