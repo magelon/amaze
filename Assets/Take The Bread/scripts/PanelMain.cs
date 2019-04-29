@@ -65,7 +65,7 @@ public class PanelMain : MonoBehaviour {
                 {
 
 #if (UNITY_IPHONE || UNITY_ANDROID)
-                    Application.OpenURL("https://guojindong.blogspot.com/2019/04/crossing-puzzle.html");
+                    Application.OpenURL("https://www.privacypolicies.com/privacy/view/f9557e9d4fa09efc36a7f4bd838723e1");
 #endif
                 }
                 break;

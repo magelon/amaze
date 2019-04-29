@@ -675,8 +675,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -129.9, y: 193.57}
-  m_SizeDelta: {x: 259.8, y: 139}
+  m_AnchoredPosition: {x: -129.9, y: 132}
+  m_SizeDelta: {x: 259.8, y: 62.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450968746
 MonoBehaviour:
@@ -2172,7 +2172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1327706160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2578,7 +2578,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.20776965, g: 0.21698111, b: 0.20776965, a: 1}
+  m_BackGroundColor: {r: 0.09211462, g: 0.09433961, b: 0.09211462, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -2644,7 +2644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1503123047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2662,7 +2662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000086416, y: -111.3}
+  m_AnchoredPosition: {x: -97, y: -224}
   m_SizeDelta: {x: 227.1, y: 50.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1503123048
@@ -2680,7 +2680,7 @@ MonoBehaviour:
   statusText: {fileID: 2084022478}
   signButton: {fileID: 1503123046}
   start: {fileID: 1327706159}
-  webClientId: 558598330385-hmp3f9372l648ghd7n171sr1ptjtdfdo.apps.googleusercontent.com
+  webClientId: 898709977647-gdt56o86ja6k0ojve6lpo5mbovkijutc.apps.googleusercontent.com
 --- !u!114 &1503123049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3296,7 +3296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.45, y: -27.8}
+  m_AnchoredPosition: {x: -33, y: -42}
   m_SizeDelta: {x: 228, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895875279
@@ -3347,7 +3347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'SignInStart
+  m_Text: 'SignIn
 
 '
 --- !u!222 &1895875281

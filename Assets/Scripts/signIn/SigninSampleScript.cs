@@ -32,7 +32,7 @@ namespace SignInSample {
         public GameObject signButton;
         public GameObject start;
 
-    public string webClientId = "558598330385-hmp3f9372l648ghd7n171sr1ptjtdfdo.apps.googleusercontent.com";
+    public string webClientId = "898709977647-gdt56o86ja6k0ojve6lpo5mbovkijutc.apps.googleusercontent.com";
         
     private GoogleSignInConfiguration configuration;
         DatabaseReference reference;
