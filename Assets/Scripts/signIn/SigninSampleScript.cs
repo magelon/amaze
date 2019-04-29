@@ -60,6 +60,10 @@ namespace SignInSample {
                 start.SetActive(true);
                 signButton.SetActive(false);
             }
+            else
+            {
+                OnSignIn();
+            }
 
         }
 

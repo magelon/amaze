@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.122
+  bundleVersion: 0.123
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -158,7 +158,7 @@ PlayerSettings:
     Android: com.lon.amaze
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 12
+  AndroidBundleVersionCode: 13
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -246,7 +246,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/unity/projects/happyCup/Assets/Take The Bread/GameLevel/cutLevels/cut-release-key.keystore
+  AndroidKeystoreName: /Users/firoprochainezo/Documents/war-the-strategy/war2/Assets/Scenes/GameLevel/cutLevels/cut-release-key.keystore
   AndroidKeyaliasName: cut
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
