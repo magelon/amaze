@@ -62,7 +62,7 @@ namespace SignInSample {
             }
             else
             {
-                OnSignIn();
+               // OnSignIn();
             }
 
         }
