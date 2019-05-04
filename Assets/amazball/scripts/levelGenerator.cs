@@ -54,6 +54,9 @@ public class levelGenerator : MonoBehaviour
     int colom3 = 0;
     //colom4 is empty
     int colom5 = 0;
+    //colom6 empty
+    //colom7 empty
+    int colom8 = 0;
 
     void drawTopLayer()
     {
@@ -95,6 +98,7 @@ public class levelGenerator : MonoBehaviour
                     }
                 }
 
+                //keep the exit and randomly chose go up or go down
                 if (i ==2)
                 {
                     topLayer[i, colom2] = 0;
@@ -128,10 +132,95 @@ public class levelGenerator : MonoBehaviour
                         }
                     }
                 }
-               
+
+                //colom 4 pass
+
+                //colom 5 chose top or bottom
+                if (i == 4)
+                {
+                    if (colom5 == 0)
+                    {
+                        colom5 = Random.Range(1, 10);
+                    }
+
+                    if (colom5 >= 5)
+                    {
+                        //top
+                        if (colom5 != 0 &&j!=0)
+                        {
+                            //spawn block can not pass 1
+                            GameObject walls = Instantiate(wall, new Vector3(i, j, -1), Quaternion.identity);
+                            //set parent
+                            walls.transform.SetParent(table.transform);
+
+                            topLayer[i, j] = 1;
+                        }
+                    }
+                    else
+                    {
+                        if (colom5 != 0 &&j!=7)
+                        {
+                            //spawn block can not pass 1
+                            GameObject walls = Instantiate(wall, new Vector3(i, j, -1), Quaternion.identity);
+                            //set parent
+                            walls.transform.SetParent(table.transform);
+
+                            topLayer[i, j] = 1;
+                        }
+                    }
+
+
+                }
+
+                //colom 8 chose top or bottom 2 or 3 space
+                if (i == 7)
+                {
+                    if (colom8 == 0)
+                    {
+                        colom8 = Random.Range(1, 10);
+                    }
+
+                    if (colom8 >= 5)
+                    {
+                        //top empty
+                        if(colom8!=0 && j != 0 && j != 1)
+                        {
+                            //spawn block can not pass 1
+                            GameObject walls = Instantiate(wall, new Vector3(i, j, -1), Quaternion.identity);
+                            //set parent
+                            walls.transform.SetParent(table.transform);
+
+                            topLayer[i, j] = 1;
+                        }
+                    }
+                    else
+                    {
+                        if(colom8!=0 && j!=7 && j != 6)
+                        {
+                            //spawn block can not pass 1
+                            GameObject walls = Instantiate(wall, new Vector3(i, j, -1), Quaternion.identity);
+                            //set parent
+                            walls.transform.SetParent(table.transform);
+
+                            topLayer[i, j] = 1;
+                        }
+                    }
+                }
+
+
             }
         }
+
+        //after rotate camera the game massed up haha
+        //RotateTable();
     }
+
+
+    void RotateTable()
+    {
+        table.transform.eulerAngles = new Vector3(0, 0, 90*Random.Range(-2,2));
+    }
+
 
     public void playerMove(string direction)
     {
