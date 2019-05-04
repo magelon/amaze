@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PanelMain : MonoBehaviour {
 
+
+    public GameObject loadingImg;
+    public Slider sl;
 		// game UI elements
 		public Text btnStart,btnMore,btnReview;
 		//public GameObject titleCN,titleEN;
@@ -40,7 +43,9 @@ public class PanelMain : MonoBehaviour {
 				switch (g.name) {
 				case "btnStart":
 						GameManager.getInstance ().playSfx ("click");
-						fadeIn ("LevelMenu");
+                        ChangeScene("LevelMenu");
+
+                        fadeIn ("LevelMenu");
 						break;
 				case "btnMore":
 						GameManager.getInstance().playSfx("click");
@@ -126,8 +131,25 @@ public class PanelMain : MonoBehaviour {
 				}
 		}
 
+    private void ChangeScene(string s)
+    {
+        StartCoroutine(LoadAsynchronously(s));
+    }
 
-		void fadeOut(){
+    IEnumerator LoadAsynchronously(string s)
+    {
+        loadingImg.SetActive(true);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(s);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            sl.value = progress;
+            yield return null;
+        }
+    }
+
+
+    void fadeOut(){
 				mask.gameObject.SetActive (true);
 				mask.color = Color.black;
 
