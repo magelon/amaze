@@ -58,7 +58,7 @@ namespace SignInSample {
             if (PlayerPrefs.HasKey("signed"))
             {
                 start.SetActive(true);
-                signButton.SetActive(false);
+                //signButton.SetActive(false);
             }
             else
             {
